@@ -1,0 +1,58 @@
+[
+  {
+    "id": 1,
+    "title": "CURAAI — VIRTUAL HEALTH ASSISTANT",
+    "role": "AI Integration / <br /> Production-Ready Flask App",
+    "description": "A production-ready Flask-based AI health assistant that provides medical guidance using Google's Gemini AI. Features include security, error handling, monitoring, deployment-ready architecture with interactive 3D background, and comprehensive medical safety protocols.",
+    "link": "https://curaai-ky7e.onrender.com/"
+  },
+  {
+    "id": 2,
+    "title": "KEYSTONE QMS — ENTERPRISE QUALITY MANAGEMENT SYSTEM",
+    "role": "Full Stack Development / <br /> Enterprise Application",
+    "description": "Developed a real-time, full-stack platform to digitize the quality assurance workflow in a manufacturing environment. Engineered a role-based system for 8 user types to report, track, and analyze product defects from initial report to final resolution.",
+    "link": "https://github.com/kenpachi11zx/keystone-qms"
+  },
+  {
+    "id": 3,
+    "title": "LIVE CRICKET SCORE API — WEB SCRAPER & API SERVER",
+    "role": "Backend Development / <br /> Web Scraping",
+    "description": "Created a Python application to scrape live cricket scores and match data from The Indian Express using BeautifulSoup. Developed a lightweight backend API with Flask to serve the parsed data in a structured, real-time JSON format.",
+    "link": "https://github.com/kenpachi11zx/cricket-score-api"
+  },
+  {
+    "id": 4,
+    "title": "MEETING WHISPERER — AI-POWERED MEETING NOTES",
+    "role": "AI Integration / <br /> Full Stack Development",
+    "description": "Designed an intelligent web app that transcribes meeting audio and generates structured summaries using OpenAI APIs. Built with React and a .NET backend to automatically extract and track action items from conversations.",
+    "link": "https://github.com/kenpachi11zx/meeting-whisperer"
+  },
+  {
+    "id": 5,
+    "title": "IOCL HSE PORTAL — ENTERPRISE COMPLIANCE SYSTEM",
+    "role": "Enterprise Development / <br /> ASP.NET Core MVC",
+    "description": "Automated a manual HSE compliance workflow by developing a secure enterprise portal using ASP.NET Core MVC, enhancing operational efficiency. Implemented a multi-level approval system featuring Role-Based Access Control (RBAC) for 8 distinct user roles.",
+    "link": "https://github.com/kenpachi11zx/iocl-hse-portal"
+  },
+  {
+    "id": 6,
+    "title": "PORTFOLIO WEBSITE — RESPONSIVE DESIGN",
+    "role": "Frontend Development / <br /> Modern Web Technologies",
+    "description": "A responsive portfolio website built with modern web technologies including HTML5, CSS3, and JavaScript. Features smooth animations and mobile-first design with interactive elements.",
+    "link": "https://moonfilms-portfolio.netlify.app/"
+  },
+  {
+    "id": 7,
+    "title": "TASK MANAGEMENT API — RESTFUL SERVICES",
+    "role": "Backend Development / <br /> API Architecture",
+    "description": "A comprehensive REST API for task management built with Node.js, Express, and PostgreSQL. Includes authentication, CRUD operations, and advanced filtering capabilities for enterprise use.",
+    "link": "https://github.com/kenpachi11zx/task-api"
+  },
+  {
+    "id": 8,
+    "title": "EXPENSE TRACKER — FINANCIAL MANAGEMENT APP",
+    "role": "Full Stack Development / <br /> Data Visualization",
+    "description": "A comprehensive expense tracking application with data visualization features. Built with React, Node.js, and Chart.js for interactive financial insights and budget management.",
+    "link": "https://github.com/kenpachi11zx/expense-tracker"
+  }
+]
