@@ -15,6 +15,8 @@ A modern, responsive portfolio website showcasing my work as a Full Stack Develo
 
 ## 📦 Installation
 
+**Prerequisites:** Node.js 20.18.1 or higher
+
 1. Clone the repository:
 ```bash
 git clone https://github.com/yourusername/portfolio.git

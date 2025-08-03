@@ -15,7 +15,7 @@ This guide will help you deploy your portfolio to various platforms.
 2. **Configure Build Settings:**
    - Build command: `npm run build`
    - Publish directory: `dist`
-   - Node version: 18
+   - Node version: 20
 
 3. **Deploy:**
    - Netlify will automatically build and deploy your site
@@ -100,7 +100,7 @@ If you need to add environment variables:
 ## 🔍 Troubleshooting
 
 ### Build Fails
-- Check Node.js version (requires 18+)
+- Check Node.js version (requires 20.18.1+)
 - Clear cache: `npm run build -- --force`
 - Check for missing dependencies
 
@@ -158,6 +158,8 @@ Before deploying, test:
 
 1. **Local build:**
    ```bash
+   # Ensure you have Node.js 20.18.1+ installed
+   node --version
    npm run build
    npm run preview
    ```
