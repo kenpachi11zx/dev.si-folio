@@ -4,7 +4,7 @@
   line-height: 1.3;
 
   @include media("<=phone") {
-    font-size: 14px;
+    font-size: 13px;
   }
 }
 
@@ -15,11 +15,11 @@
   line-height: 1.3;
 
   @include media("<=tablet") {
-    font-size: 3rem;
+    font-size: 2.4rem;
   }
 
   @include media("<=phone") {
-    font-size: 18px;
+    font-size: 16px;
   }
 }
 
@@ -30,6 +30,6 @@
   letter-spacing: -0.025em;
 
   @include media("<=phone") {
-    font-size: 28px;
+    font-size: 20px;
   }
 }

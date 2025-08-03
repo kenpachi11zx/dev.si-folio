@@ -3,8 +3,8 @@
   padding-right: 4rem;
 
   @include media("<=phone") {
-    padding-left: 1.6rem;
-    padding-right: 1.6rem;
+    padding-left: 1.2rem;
+    padding-right: 1.2rem;
   }
 }
 
@@ -18,6 +18,10 @@
     justify-content: space-between;
     @extend %description-12;
     line-height: 1.4;
+
+    @include media("<=phone") {
+      margin-bottom: 4rem;
+    }
 
     .hide-mobile {
       @include media("<=phone") {
@@ -92,6 +96,10 @@
     margin-bottom: 9.6rem;
     @extend %padding-home;
 
+    @include media("<=phone") {
+      margin-bottom: 6rem;
+    }
+
     .hero {
       &__title {
         line-height: 0.9;
@@ -108,7 +116,7 @@
             @extend %title-328;
             letter-spacing: -0.05em;
             word-wrap: break-word;
-            font-size: clamp(3.5rem, 8vw, 4.5rem);
+            font-size: clamp(2.5rem, 12vw, 6rem);
             line-height: 0.9;
             @include media(">phone") {
               display: none;
@@ -196,10 +204,10 @@
             padding-bottom: 0;
           }
 
-          @include media("<=phone") {
-            max-width: 255px;
-            margin-left: auto;
-          }
+                @include media("<=phone") {
+        max-width: 100%;
+        margin-left: 0;
+      }
         }
       }
 
@@ -263,8 +271,8 @@
     @extend %padding-home;
 
     @include media("<=phone") {
-      padding-top: 16rem;
-      padding-bottom: 16rem;
+      padding-top: 12rem;
+      padding-bottom: 12rem;
     }
 
     @include media(">tablet") {
@@ -328,10 +336,10 @@
       }
 
       @include media("<=phone") {
-        max-width: 35rem;
-        margin-left: auto;
-        padding-left: 1.6rem;
-        padding-right: 1.6rem;
+        max-width: 100%;
+        margin-left: 0;
+        padding-left: 0;
+        padding-right: 0;
       }
 
       span,
@@ -585,10 +593,10 @@
       text-align: center;
 
       @include media("<=phone") {
-        max-width: 255px;
+        max-width: 100%;
         width: 100%;
-        text-align: left;
-        margin-left: auto;
+        text-align: center;
+        margin-left: 0;
         word-break: break-word;
       }
 
@@ -659,7 +667,7 @@
     }
 
     @include media("<=phone") {
-      max-width: 255px;
+      max-width: 100%;
       width: 100%;
       text-align: center;
     }
