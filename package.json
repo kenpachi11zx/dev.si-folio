@@ -1,17 +1,20 @@
 {
-  "name": "profile-rebuild",
+  "name": "sahil-islam-portfolio",
   "private": true,
-  "version": "0.0.0",
+  "version": "1.0.0",
   "license": "MIT",
   "scripts": {
     "predev": "node scripts/predev.js",
     "dev": "vite src --port 3000",
     "prebuild": "node scripts/predev.js",
     "build": "vite build src",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "deploy": "npm run build",
+    "serve": "vite preview --port 3000"
   },
-  "keywords": [],
-  "author": "",
+  "keywords": ["portfolio", "developer", "full-stack", "react", "vite"],
+  "author": "Sahil Islam",
+  "description": "Full Stack Developer Portfolio showcasing projects and skills",
   "devDependencies": {
     "cheerio": "^1.1.0",
     "sass": "^1.62.0",
@@ -20,5 +23,9 @@
   "dependencies": {
     "gsap": "^3.7.0",
     "loconative-scroll": "https://github.com/quentinhocde/loconative-scroll"
+  },
+  "engines": {
+    "node": ">=18.0.0",
+    "npm": ">=8.0.0"
   }
 }
