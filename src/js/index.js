@@ -5,6 +5,7 @@ import { copyText } from "./utils/index";
 import { mapEach } from "./utils/dom";
 // import Home from "./pages/home";
 import Time from "./components/Time";
+import { AnimationController, ResponsiveController, PerformanceOptimizer } from "./utils/animations.js";
 
 const toContactButtons = document.querySelectorAll(".contact-scroll");
 const footer = document.getElementById("js-footer");
@@ -51,6 +52,9 @@ ScrollTrigger.scrollerProxy(scroll.el, {
 export default class Home {
   constructor(scroll) {
     this.locomotive = scroll;
+    this.animationController = new AnimationController();
+    this.responsiveController = new ResponsiveController();
+    this.performanceOptimizer = new PerformanceOptimizer();
     this.heroTextAnimation();
     this.homeIntro();
     this.homeAnimations();

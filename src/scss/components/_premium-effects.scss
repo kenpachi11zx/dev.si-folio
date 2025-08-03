@@ -1,0 +1,310 @@
+// Premium Glassmorphism Effects
+.glass-effect {
+  background: rgba(255, 255, 255, 0.05);
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+  
+  &:hover {
+    background: rgba(255, 255, 255, 0.1);
+    border: 1px solid rgba(255, 165, 0, 0.3);
+    box-shadow: 0 12px 40px rgba(255, 165, 0, 0.1);
+  }
+}
+
+// Animated Gradient Background
+.gradient-bg {
+  background: linear-gradient(-45deg, #1a1a1a, #2a2a2a, #1a1a1a, #0a0a0a);
+  background-size: 400% 400%;
+  animation: gradientShift 15s ease infinite;
+}
+
+@keyframes gradientShift {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+// Floating Elements Effect
+.floating {
+  animation: float 6s ease-in-out infinite;
+}
+
+@keyframes float {
+  0%, 100% { transform: translateY(0px); }
+  50% { transform: translateY(-20px); }
+}
+
+// Magnetic Hover Effect
+.magnetic {
+  transition: transform 0.3s ease;
+  
+  &:hover {
+    transform: scale(1.05);
+  }
+}
+
+// Text Glitch Effect
+.glitch {
+  position: relative;
+  
+  &::before,
+  &::after {
+    content: attr(data-text);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+  }
+  
+  &::before {
+    animation: glitch-1 2s infinite linear alternate-reverse;
+    color: #ff0000;
+    z-index: -1;
+  }
+  
+  &::after {
+    animation: glitch-2 3s infinite linear alternate-reverse;
+    color: #00ffff;
+    z-index: -2;
+  }
+}
+
+@keyframes glitch-1 {
+  0%, 100% { transform: translate(0); }
+  20% { transform: translate(-2px, 2px); }
+  40% { transform: translate(-2px, -2px); }
+  60% { transform: translate(2px, 2px); }
+  80% { transform: translate(2px, -2px); }
+}
+
+@keyframes glitch-2 {
+  0%, 100% { transform: translate(0); }
+  20% { transform: translate(2px, -2px); }
+  40% { transform: translate(2px, 2px); }
+  60% { transform: translate(-2px, -2px); }
+  80% { transform: translate(-2px, 2px); }
+}
+
+// Neon Glow Effect
+.neon-glow {
+  text-shadow: 
+    0 0 5px rgba(255, 165, 0, 0.5),
+    0 0 10px rgba(255, 165, 0, 0.3),
+    0 0 15px rgba(255, 165, 0, 0.2);
+  transition: all 0.3s ease;
+  
+  &:hover {
+    text-shadow: 
+      0 0 10px rgba(255, 165, 0, 0.8),
+      0 0 20px rgba(255, 165, 0, 0.5),
+      0 0 30px rgba(255, 165, 0, 0.3);
+  }
+}
+
+// Particle Background Effect
+.particle-bg {
+  position: relative;
+  overflow: hidden;
+  
+  &::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: 
+      radial-gradient(circle at 20% 80%, rgba(255, 165, 0, 0.1) 0%, transparent 50%),
+      radial-gradient(circle at 80% 20%, rgba(255, 165, 0, 0.1) 0%, transparent 50%),
+      radial-gradient(circle at 40% 40%, rgba(255, 165, 0, 0.05) 0%, transparent 50%);
+    animation: particleMove 20s ease-in-out infinite;
+  }
+}
+
+@keyframes particleMove {
+  0%, 100% { transform: translate(0, 0) scale(1); }
+  50% { transform: translate(-10px, -10px) scale(1.1); }
+}
+
+// Morphing Border Effect
+.morphing-border {
+  position: relative;
+  
+  &::before {
+    content: '';
+    position: absolute;
+    top: -2px;
+    left: -2px;
+    right: -2px;
+    bottom: -2px;
+    background: linear-gradient(45deg, #ff6b6b, #4ecdc4, #45b7d1, #96ceb4, #feca57);
+    background-size: 400% 400%;
+    animation: borderMorph 3s ease infinite;
+    z-index: -1;
+    border-radius: inherit;
+  }
+}
+
+@keyframes borderMorph {
+  0%, 100% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+}
+
+// 3D Card Tilt Effect
+.tilt-3d {
+  transform-style: preserve-3d;
+  transition: transform 0.3s ease;
+  
+  &:hover {
+    transform: rotateX(10deg) rotateY(10deg);
+  }
+}
+
+// Liquid Button Effect
+.liquid-button {
+  position: relative;
+  overflow: hidden;
+  
+  &::before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 0;
+    height: 0;
+    background: rgba(255, 165, 0, 0.3);
+    border-radius: 50%;
+    transform: translate(-50%, -50%);
+    transition: width 0.6s ease, height 0.6s ease;
+  }
+  
+  &:hover::before {
+    width: 300px;
+    height: 300px;
+  }
+}
+
+// Typewriter Effect
+.typewriter {
+  overflow: hidden;
+  border-right: 2px solid rgba(255, 165, 0, 0.75);
+  white-space: nowrap;
+  animation: typing 3.5s steps(40, end), blink-caret 0.75s step-end infinite;
+}
+
+@keyframes typing {
+  from { width: 0; }
+  to { width: 100%; }
+}
+
+@keyframes blink-caret {
+  from, to { border-color: transparent; }
+  50% { border-color: rgba(255, 165, 0, 0.75); }
+}
+
+// Holographic Effect
+.holographic {
+  background: linear-gradient(
+    45deg,
+    transparent 30%,
+    rgba(255, 255, 255, 0.1) 50%,
+    transparent 70%
+  );
+  background-size: 200% 200%;
+  animation: holographic 3s ease-in-out infinite;
+}
+
+@keyframes holographic {
+  0%, 100% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+}
+
+// Smoke Effect
+.smoke-effect {
+  position: relative;
+  
+  &::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: radial-gradient(ellipse at center, rgba(255, 165, 0, 0.1) 0%, transparent 70%);
+    opacity: 0;
+    transition: opacity 0.3s ease;
+  }
+  
+  &:hover::after {
+    opacity: 1;
+    animation: smokeRise 2s ease-out;
+  }
+}
+
+@keyframes smokeRise {
+  0% { transform: translateY(0) scale(1); opacity: 0; }
+  50% { opacity: 1; }
+  100% { transform: translateY(-50px) scale(2); opacity: 0; }
+}
+
+// Matrix Rain Effect
+.matrix-bg {
+  position: relative;
+  
+  &::before {
+    content: '01';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    font-family: 'Courier New', monospace;
+    font-size: 12px;
+    color: rgba(0, 255, 0, 0.1);
+    line-height: 1;
+    animation: matrixRain 10s linear infinite;
+    pointer-events: none;
+  }
+}
+
+@keyframes matrixRain {
+  0% { transform: translateY(-100%); }
+  100% { transform: translateY(100%); }
+}
+
+// Responsive Premium Effects
+@media (max-width: 768px) {
+  .glass-effect {
+    backdrop-filter: blur(5px);
+  }
+  
+  .floating {
+    animation: float 4s ease-in-out infinite;
+  }
+  
+  .tilt-3d:hover {
+    transform: rotateX(5deg) rotateY(5deg);
+  }
+  
+  .glitch::before,
+  .glitch::after {
+    display: none;
+  }
+}
+
+// Performance optimizations
+@media (prefers-reduced-motion: reduce) {
+  .gradient-bg,
+  .floating,
+  .glitch,
+  .particle-bg,
+  .morphing-border,
+  .holographic,
+  .smoke-effect,
+  .matrix-bg {
+    animation: none;
+  }
+} 
